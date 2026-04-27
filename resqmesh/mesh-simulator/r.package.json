@@ -1,0 +1,16 @@
+{
+    "name": "resqmesh-mesh-simulator",
+    "version": "1.0.0",
+    "description": "Mesh network simulation engine for ResQMesh",
+    "main": "index.js",
+    "keywords": [
+        "mesh",
+        "network",
+        "simulation",
+        "emergency"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "uuid": "^14.0.0"
+    }
+}

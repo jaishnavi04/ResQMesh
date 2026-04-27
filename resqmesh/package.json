@@ -1,0 +1,16 @@
+{
+  "name": "resqmesh",
+  "version": "1.0.0",
+  "description": "ResQMesh – Resilient Mesh Emergency Response System",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install && cd ../admin-dashboard && npm install",
+    "dev:backend": "cd backend && node server.js",
+    "dev:frontend": "cd frontend && npx vite --port 5173",
+    "dev:admin": "cd admin-dashboard && npx vite --port 5174",
+    "start": "npx concurrently -n BACKEND,FRONTEND,ADMIN -c blue,green,magenta \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:admin\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
